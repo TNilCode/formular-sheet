@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formula Sheet</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="profile-div">
+
+      <table class="profile-table">
+        <tr class="title-row">
+          <td>SIDE MARK</td>
+          <td> <textarea class="profile-inputs"></textarea> </td>
+        </tr>
+
+        <tr class="title-row">
+          <td>NAME</td>
+          <td> <textarea class="profile-inputs"></textarea> </td>
+        </tr>
+
+        <tr class="title-row">
+          <td>FABRIC</td>
+          <td> <textarea class="profile-inputs"></textarea> </td>
+        </tr>
+
+        <tr class="title-row">
+          <td>COMPONENT</td>
+          <td> <textarea class="profile-inputs"></textarea> </td>
+        </tr>
+
+        <tr class="title-row">
+          <td>NOTE</td>
+          <td> <textarea class="profile-inputs"></textarea> </td>
+        </tr>
+      </table>
+
+    </div>
+
+    <div class="formula-selector">
+      <button id="title-button">--- Choose Formula ---</button>
+      <div id="formula-popup" class="hidden unblurred">
+        <button class="formula-btn" id="tri-shadeo">TRI SHADEO</button>
+        <button class="formula-btn" id="tri-shadeo-motor">TRI SHADEO MOTOR</button>
+        <button class="formula-btn" id="tri-shadeo-small">TRI SHADEO SMALL</button>
+        <button class="formula-btn" id="tri-verti-sq-motor">TRI VERTILUX SQ MOTOR</button>
+        <button class="formula-btn" id="duo-shadeo-sq">DUO VERTILUX SQ</button>
+        <button class="formula-btn" id="duo-verti-sq-motor">DUO VERTILUX SQ MOTOR</button>
+        <button class="formula-btn" id="duo-shades-manual">DUO SHADES MANUAL</button>
+        <button class="formula-btn" id="duo-shades-motor">DUO SHADES MOTORIZED</button>
+        <button class="formula-btn" id="roller-shadeo">ROLLER SHADEO</button>
+        <button class="formula-btn" id="roller-ver-sq-manual">ROLLER VER SQ MANUAL</button>
+        <button class="formula-btn" id="roller-ver-sq-motor">ROLLER VER SQ MOTOR</button>
+        <button class="formula-btn" id="verti-open-roller">VERTLIUX OPEN ROLLER</button>
+      </div>
+
+    </div>
+    <div class="table-div">
+
+      <table id="main-table">
+        <tr class="title-row">
+          <td>AREA</td>
+          <td>WIDTH</td>
+          <td>HEIGHT</td>
+          <td>POS</td>
+          <td>IN/OUT</td>
+          <td id="ok-title">Submit</td>
+        </tr>
+
+        <tr class="textarea-row">
+          <td><input id="area-input" class="textarea-input form-el"></input></td>
+          <td><input id="width-input" class="textarea-input math-input form-el"></input></td>
+          <td><input id="height-input" class="textarea-input math-input form-el"></input></td>
+
+          <!-- Position -->
+          <td id="pos-div" class="dropdown-div">
+            <button id="pos-btn" class="dropdown-btn">UNSELECTED</button>
+            <div id="pos-dropdown" class="hidden dropdown-menu">
+              <button id="right-btn" class="dropdown-options">RIGHT</button>
+              <button id="left-btn" class="dropdown-options">LEFT</button>
+            </div>
+          </td>
+
+          <!-- Inside or Outside -->
+          <td id="inout-div" class="dropdown-div">
+            <button id="inout-btn" class="dropdown-btn">UNSELECTED</button>
+            <div id="inout-dropdown" class="hidden dropdown-menu">
+              <button id="is-btn" class="dropdown-options">IS</button>
+              <button id="os-btn" class="dropdown-options">OS</button>
+            </div>
+          </td>
+
+          <td><button id="ok-btn" class="form-el">NEXT</button></td>
+        </tr>
+      </table>
+
+    </div>
+
+
+    <!-- OUTPUT -->
+    <h1 id="output-header"></h1>
+    <div class="output-div">
+      <table id="output-table"></table>
+    </div>
+
+
+    <!-- BUTTON OPTIONS -->
+    <div class="button-options">
+      <button id="reset-sizes">Reset Sizes</button>
+      <button id="print-button">PRINT</button>
+      <button id="master-reset">RESET ALL</button>
+    </div>
+
+    <img src="https://i0.wp.com/shadeotech.com/wp-content/uploads/2022/05/01-01-2-2.png?resize=1024%2C266&ssl=1"
+      alt="Shadeotech Window Fashions Logo" width="150px" id="shadeotech-logo" />
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
